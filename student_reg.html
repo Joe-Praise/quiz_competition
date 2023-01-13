@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/1ca1400501.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="SCSS/style.css" />
+    <title>Student Registration page | Veritas International Academy quiz competition</title>
+</head>
+<body>
+    <section class="header">
+      <header>
+        <div class="row">
+          <a
+            href="#main-menu"
+            class="menu-toggle"
+            id="main-menu-toggle"
+            aria-label="Open main menu"
+          >
+            <!-- will be hidden and accessible to just screen readers -->
+            <span class="sr-only">Open main menu</span>
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </a>
+
+          <div class="logo">
+            <!-- <a href="index.html"><img src="images/Joe's_world_logo_cropped.png" alt="Joe's World written in black and white color, similar to the panda sign of good and evil"></a> -->
+            <a href="index.html"
+              ><img src="./image/download.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <nav id="main-menu" class="main-menu" aria-label="main menu">
+          <a href="#main-menu-toggle" class="menu-close hide">
+            <span class="sr-only">Close main menu</span>
+            <i class="fa-solid fa-x" aria-hidden="true"></i>
+          </a>
+          <ul>
+            <li><a href="school_reg.html"> School registration</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" hidden></a>
+      </header>
+    </section>
+
+    <main>
+      <section class="form_container">
+        <h1 id="h1">Student Registration Form</h1>
+        <form id="form">
+          <!-- <div hidden>
+             <label for="id">ID</label>
+           <input type="number" id="id" value="51" hidden/>
+         </div> -->
+          <div>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" class="input" />
+            <span></span>
+          </div>
+          <div>
+           <label for="lname">Last Name</label>
+           <input type="text" id="lname" class="input" />
+           <span></span>
+         </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input" />
+            <span></span>
+          </div>
+          <div>
+            <label for="nos">Name of school</label>
+            <select id="nos" class="input">
+                <option value="">Select</option>
+            </select>
+            <span></span>
+          </div>
+          <div>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" class="input" />
+            <span></span>
+          </div>
+          <div>
+            <button type="button" id="registerBtn">Create Profile</button>
+          </div>
+        </form>
+      </section>
+    </main>
+</body>
+  <script src="JS/student_register.js"></script>
+</html>

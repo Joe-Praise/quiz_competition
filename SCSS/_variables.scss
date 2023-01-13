@@ -1,0 +1,35 @@
+$size1: 1rem;
+$size2: 2rem;
+$size3: 3rem;
+$size4: 4rem;
+$size5: 5rem;
+$size6: 6rem;
+$size7: 7rem;
+$size8: 8rem;
+$size9: 9rem;
+$size10: 10rem;
+
+$em1: 1em;
+$em2: 2em;
+$em3: 3em;
+
+$color1:#A5A692;
+$color2:#494FBF;
+$color3:black;
+$color4:#FFB30D;
+$color5: #fff;
+$color6: #dedede;
+$hue: 200;
+$lighten1: lighten($color: blue, $amount: 25);
+$lighten2: lighten($color: blue, $amount: 45);
+$darken1: darken($color: blue, $amount: 1);
+
+$center: center;
+$left:left;
+$right:right;
+
+$row: row wrap;
+$s-between:space-between;
+$none: none;
+
+$bold:600;

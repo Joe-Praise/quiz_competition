@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ca1400501.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="SCSS/style.css" />
+    <title>Quiz | Veritas International Academy quiz competition</title>
+</head>
+<body class="bg_color">
+    <section class="header">
+      <header>
+        <div class="row">
+          <a
+            href="#main-menu"
+            class="menu-toggle"
+            id="main-menu-toggle"
+            aria-label="Open main menu"
+          >
+            <!-- will be hidden and accessible to just screen readers -->
+            <span class="sr-only">Open main menu</span>
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </a>
+
+          <div class="logo">
+            <!-- <a href="index.html"><img src="images/Joe's_world_logo_cropped.png" alt="Joe's World written in black and white color, similar to the panda sign of good and evil"></a> -->
+            <a href="index.html"
+              ><img src="./image/download.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <nav id="main-menu" class="main-menu" aria-label="main menu">
+          <a href="#main-menu-toggle" class="menu-close hide">
+            <span class="sr-only">Close main menu</span>
+            <i class="fa-solid fa-x" aria-hidden="true"></i>
+          </a>
+          <ul>
+            <!-- <li><a href="school_reg.html"> School registration</a></li> -->
+            <li><a href="#" id="logout">Log Out</a></li>
+          </ul>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" hidden></a>
+      </header>
+    </section>
+    
+    <!-- Start Quiz button -->
+    <div class="start_btn">
+        <button id="start_btn" class="btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz instruction modal -->
+    <div class="info_box">
+        <span class="info_title">Some Rules For This Quiz.</span>
+        <ol class="info_block">
+            <li class="info">You will have only <span>2 minutes </span> to complete the quiz.</li>
+            <li class="info">Once you select your answer, you can't change it.</li>
+            <li class="info">You can't exit from the Quiz while you're playing.</li>
+            <li class="info">You'll get points on the basis of your currect answers</li>
+        </ol>
+
+        <div class="buttons">
+            <button id="quit_btn" class="quit_btn btn">Exit Quiz</button>
+            <button id="next_btn" class="next_btn btn">Next</button>
+        </div>
+    </div>
+
+    <!-- Quiz Template -->
+    <section class="quiz_container">
+        <div class="container">
+            <div id="question_container" >
+                <div class="details">
+                  <h3 id="sname">Veritas</h3>
+                  <h3 id="uname">Zumzy Brown</h3>
+                  <h3 id="clock">2:00</h3>
+                </div>
+                <div id="question"></div>
+                <div id="answer-buttons" class="btn_grid">
+                  <!-- buttons are appended from quiz.js -->
+                </div>
+            </div>
+            <footer>
+                <div class="totalQ">
+                    <!-- <span><p>2</p>of<p>5</p>Questions</span> -->
+                </div>
+                <div class="buttons">
+                    <button id="exit_btn" class="exit_btn btn">Exit Quiz</button>
+                    <button id="next_btn" class="next_btn btn">Next</button>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Quiz Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fa-solid fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+          <!-- message is appended from quiz.js -->
+        </div>
+        <div class="buttons">
+            <button id="Quit_btn" class="quit_btn btn">Quit Quiz</button>
+        </div>
+    </div>
+</body>
+<script src="JS/quiz.js"></script>
+</html>

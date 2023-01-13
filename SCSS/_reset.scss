@@ -1,0 +1,12 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lighten($color: blue, $amount: 40);
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    transition: all ease-in-out 0.5s;
+}
