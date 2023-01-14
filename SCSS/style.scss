@@ -564,6 +564,16 @@ span {
   text-transform: uppercase;
 }
 
+.footer{
+  text-align: center;
+  h3{
+    a{
+      text-decoration: none;
+      color: $color2;
+    }
+  }
+}
+
 @media (min-width: 800px) {
   .header {
     padding: $size1;

@@ -52,9 +52,20 @@ function schoolInfo(ele) {
   registeredSchools.push(profile);
   localStorage.setItem("registeredSchools", JSON.stringify(registeredSchools));
 }
+function blockSubmit() {
+  if (inputs[1].value === "" || inputs[1].value === null) {
+		alert("Complete registration required");
+		return;
+  } else {
+		alert("Next: Register students");
+		return;
+  }
+}
 
 registerBtn.addEventListener("click", function (e) {
   e.preventDefault();
   formValidation();
+  blockSubmit();
   schoolInfo(generateId);
+  // alert("Next: Register Students");
 });

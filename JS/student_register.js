@@ -70,8 +70,17 @@ function studentInfo(ele) {
   localStorage.setItem("registeredStudents", JSON.stringify(registeredStudents));
 }
 
+function blockSubmit() {
+    if (inputs[4].value === "" || inputs[4].value === null) {
+		alert("Complete registration required");
+		return;
+    } else {
+      alert("Next: Login");
+	}
+}
 registerBtn.addEventListener("click", function (e) {
   e.preventDefault();
   formValidation();
+  blockSubmit();
   studentInfo(generateId);
 });

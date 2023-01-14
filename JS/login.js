@@ -24,13 +24,8 @@ class User {
     };
     loggedAcc.push(profile);
     localStorage.setItem("loggedAcc", JSON.stringify(loggedAcc));
-    console.log(loggedAcc);
     window.location.href = "./quiz.html";
   }
-
-  // logOut() {
-  //    localStorage.removeItem("loggedAcc");
-  // }
 }
 
 function loginCheck() {
@@ -57,9 +52,3 @@ loginBtn.addEventListener("click", function (e) {
   e.preventDefault();
   loginCheck();
 });
-
-// work on how to make both buttons work on both pages;
-// logoutBtn.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     new User().logOut();
-// });
